@@ -1,29 +1,15 @@
-<!--
-
-███╗░░░███╗██╗░██████╗░██╗░░░██╗███████╗██╗░░░░░  ░█████╗░░██████╗░██████╗░
-████╗░████║██║██╔════╝░██║░░░██║██╔════╝██║░░░░░  ██╔══██╗██╔════╝██╔════╝░
-██╔████╔██║██║██║░░██╗░██║░░░██║█████╗░░██║░░░░░  ███████║╚█████╗░██║░░██╗░
-██║╚██╔╝██║██║██║░░╚██╗██║░░░██║██╔══╝░░██║░░░░░  ██╔══██║░╚═══██╗██║░░╚██╗
-██║░╚═╝░██║██║╚██████╔╝╚██████╔╝███████╗███████╗  ██║░░██║██████╔╝╚██████╔╝
-╚═╝░░░░░╚═╝╚═╝░╚═════╝░░╚═════╝░╚══════╝╚══════╝  ╚═╝░░╚═╝╚═════╝░░╚═════╝░
--->
 <!DOCTYPE html>
 <html>
 <head>
   <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="theme-color" content="#16D2F7" />
+  <meta name="theme-color" content="#000000" />
   
-<title>LECTOR DE CÓDIGOS QR</title>
+<title>MIKHMON QR CODE SCANNER</title>
   <style>
     body{
-      background-image: url("fondo.jpg");
-      background-color: transparent;
+      background-color: #000000;
       color :#ffffff;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
     }
     video {
       width: 100%    !important;
@@ -87,19 +73,19 @@
         <div style="display: table;">
           <div style="display: table-row;">
             <div style="display: table-cell; padding:3px;">
-              <div class="btn" id="reload" onclick="location.reload();"><i class="icon icon-arrows-cw">&#xe800;</i> Cambiar Cámara</div>
+              <div class="btn" id="reload" onclick="location.reload();"><i class="icon icon-arrows-cw">&#xe800;</i> Reload Camera</div>
             </div>
             <div style="display: table-cell; padding:3px;">
-              <a class="btn" href="intent://https://mgtech-ec.github.io/QR-SCANER/#Intent;scheme=http;package=com.android.chrome;end"><i class="icon icon-chrome-1">&#xf268;</i> Abrir en Chrome</a>
+              <!-- <div class="btn" onclick="document.location = 'googlechrome://navigate?url=https://laksa19.github.io/myqr/';"></div> -->
+              <a class="btn" href="intent://laksa19.github.io/myqr#Intent;scheme=http;package=com.android.chrome;end"><i class="icon icon-chrome-1">&#xf268;</i> Open in Chrome</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div>Laundry&copy 2021<br>Powered by Miguel AsG</div>
+    <div>MIKHMON QR CODE SCANNER <br>Powered by <a href="http://www.webqr.com">webqr.com</a></div>
   </center>
 <canvas style="display:none;" id="qr-canvas" width="800" height="600"></canvas>
 <script type="text/javascript">load();</script>
 </body>
 </html>
-
