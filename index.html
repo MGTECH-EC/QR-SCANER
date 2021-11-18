@@ -17,11 +17,25 @@
 <title>LECTOR DE CÓDIGOS QR</title>
   <style>
     body{
-      background-image: url("fondo.jpg") no-repeat cover cover fixed;
-      background-color: transparent;
-      height: 100%;
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
+      background-image: url("fondo.jpg");
+       
+
+  /* Fijar la imagen de fondo este vertical y
+    horizontalmente y centrado */
+  background-position: center center;
+
+  /* Esta imagen no debe de repetirse */
+  background-repeat: no-repeat;
+
+  /* COn esta regla fijamos la imagen en la pantalla. */
+  background-attachment: fixed;
+
+  /* La imagen ocupa el 100% y se reescala */
+  background-size: cover;
+
+  /* Damos un color de fondo mientras la imagen está cargando  */
+  background-color: #464646;
+}
     }
     video {
       width: 100%    !important;
